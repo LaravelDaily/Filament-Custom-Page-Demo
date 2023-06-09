@@ -13,7 +13,7 @@ class GameFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
+            'name' => $this->faker->words(random_int(3, 5), true),
         ];
     }
 }
